@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name of chosen challenge</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+  <main class="container">
+    <h1 class="form-heading">Welcome to my registration page</h1>
+
+    <p class="form-info">Please, enter your informartion below to register</p>
+
+    <form action="" method="post" class="form">
+      <div class="form_group">
+        <label for="first_name" class="form_group_label">First Name</label>
+        <input type="text" name="first_name" id="first_name" class="first_name" placeholder="First Name" required>
+      </div>
+      <div class="form_group">
+        <label for="last_name" class="form_group_label">Last Name</label>
+        <input type="text" name="last_name" id="last_name" class="last_name" placeholder="Last Name" required>
+      </div>
+      <div class="form_group">
+        <label for="email" class="form_group_label">Email Address</label>
+        <input type="text" name="email" id="email" class="email" placeholder="Email" required>
+      </div>
+      <div class="form_group">
+        <label for="phone" class="form_group_label">Phone Number</label>
+        <input type="tel" name="phone" id="phone" class="phone" placeholder="Phone Number" required>
+      </div>
+      <div class="form_group">
+        <label for="gender" name="gender" class="form_group_label">Gender</label>
+        <select name="gender" placeholder="Gender" required>
+          <option value="male">Male</option>
+          <option value="female">Fmale</option>
+          <option value="other">Prefer not to say</option>
+        </select>
+      </div>
+      <button class="btn_submit">Register</button>
+    </form>
+  </main>
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
